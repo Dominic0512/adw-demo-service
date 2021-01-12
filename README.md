@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Docker build image and push to docker hub
+
+```
+docker build -f Dockerfile.prod -t xxxx/adw-demo:v1.0.0
+
+docker login
+docker push xxxx/adw-demo:v1.0.0
+```
